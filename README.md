@@ -22,8 +22,8 @@ LogiBot is a logistics assistant built to handle natural language queries for sh
 
 ### Clone the Repository
 ```bash
-git clone [<your-repo-url>](https://github.com/sunilgopinath/LogiBot)
-cd logibot
+git clone https://github.com/sunilgopinath/LogiBot
+cd LogiBot
 ```
 
 ## Install Dependencies

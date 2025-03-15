@@ -9,6 +9,8 @@ import cors from 'cors';
 import userRouter from "./routes/users";
 import healthRouter from "./routes/health";
 import errorHandler from "./middlewares/error";
+import openaiRouter from './routes/openai';
+import shipmentRouter from './routes/shipment';
 
 // Express initialization
 const app = express();
@@ -18,8 +20,10 @@ app.use(json());
 app.use(cors());
 
 // Routes
-app.use(healthRouter);
+app.use('/api', healthRouter);
 app.use(userRouter);
+app.use('/api/ai', openaiRouter);
+app.use('/api/shipment', shipmentRouter);
 app.use(errorHandler);
 
 export default app;

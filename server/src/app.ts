@@ -6,7 +6,9 @@ import { json } from "body-parser";
 import cors from 'cors';
 
 // Project dependencies
-import healthRouter from "./routes/health.routes";
+import userRouter from "./routes/users";
+import healthRouter from "./routes/health";
+import errorHandler from "./middlewares/error";
 
 // Express initialization
 const app = express();
@@ -17,5 +19,7 @@ app.use(cors());
 
 // Routes
 app.use(healthRouter);
+app.use(userRouter);
+app.use(errorHandler);
 
 export default app;

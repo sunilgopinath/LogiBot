@@ -11,6 +11,7 @@ import healthRouter from "./routes/health";
 import errorHandler from "./middlewares/error";
 import openaiRouter from './routes/openai';
 import shipmentRouter from './routes/shipment';
+import anthropicRouter from './routes/anthropic';
 
 // Express initialization
 const app = express();
@@ -24,6 +25,7 @@ app.use('/api', healthRouter);
 app.use(userRouter);
 app.use('/api/ai', openaiRouter);
 app.use('/api/shipment', shipmentRouter);
+app.use('/api/route', anthropicRouter);
 app.use(errorHandler);
 
 export default app;

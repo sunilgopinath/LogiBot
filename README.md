@@ -22,6 +22,7 @@ LogiBot is an intelligent logistics assistant that combines real-time weather da
 This project demonstrates expertise with multiple AI technologies:
 
 - **OpenAI Integration**: Uses GPT models to analyze logistics data and generate insights
+- **Anthropic Claude**: Powers intelligent route optimization and delivery planning
 - **Weather API**: Incorporates real-world data to enhance AI predictions
 - **Context-Aware Analysis**: AI considers shipment details, location, and environmental factors
 

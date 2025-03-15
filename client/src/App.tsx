@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import './App.css';
 import ShipmentAnalyzer from './components/ShipmentAnalyzer';
+import RouteOptimizer from './components/RouteOptimizer';
 
 // Define the response structure from the backend
 interface ShipmentData {
@@ -107,6 +108,7 @@ function App() {
 
           {/* AI-Powered Shipment Analyzer with Redux */}
           <ShipmentAnalyzer />
+          <RouteOptimizer />
         </div>
       </div>
     </Provider>

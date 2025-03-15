@@ -17,6 +17,7 @@
     "concurrently": "^9.1.2"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
     "axios": "^1.8.3",
     "openai": "^4.87.3"
   }
